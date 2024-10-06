@@ -1,10 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int num,rev,r,sum=0;
+   int num,rev,r,sum;
     printf("enter the number: ");
     scanf("%d",&num);
-    num=rev;
+    sum=0;
+    rev=num;
     while(num>0)
     {
       r=num%10;
