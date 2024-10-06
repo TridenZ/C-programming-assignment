@@ -4,15 +4,25 @@ int main()
     int a,b,c;
     printf("enter the length of sides of the triangle: ");
     scanf("%d%d%d",&a,&b,&c);
-    if(a==b&&b==c)
+    if(a+b>c&&b+c>a&&a+c>b)
     {
+        if(a==b&&b==c)
+         {
         printf("it is a equilateral traingle!");
-    }
-    else if(a==b||a==c||b==c)
-    {
+         }
+        else if(a==b||a==c||b==c)
+         {
         printf("it is a isoceles traingle!");
-    }
-    else{
+         }
+        else
+         {
         printf("it is a scalene traingle!");
+         }
+
     }
+    else
+    {
+      printf("triangle can't be formed");
+    }
+    
 }
